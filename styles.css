@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Post container styling */
+.post {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title styling */
+.post h2 {
+    margin-top: 0;
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    color: #000; /* Set the text color to black */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Apply a beautiful serif font */
+    font-size: 24px; /* Optional: Adjust font size for better readability */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Post actions styling */
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+/* Like button styling */
+.like-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #e63946; /* Red for liked */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Like count styling */
+.like-count {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Comment button styling */
+.comment-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF; /* Blue for comments */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.2s ease;
+}
+
+.comment-btn:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Comment count styling */
+.comment-count {
+    font-size: 16px;
+    color: #888;
+    font-weight: normal;
+    font-size: 14px;
+}
+.post-meta {
+    color: #888; /* Light gray color */
+    font-size: 14px; /* Optional: Adjust font size */
+    margin: 5px 0; /* Optional: Add spacing */
+}
+
+/* Styling for links in post.php */
+.post a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set the link color to black */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.post a:hover {
+    color: #0056b3; /* Change to darker blue on hover */
+}
+
+/* Styling for the add_post form container */
+.add_post {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+}
+
+/* Input, textarea, and select styling */
+.add_post input[type="text"],
+.add_post textarea,
+.add_post select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.add_post textarea {
+    height: 200px; /* Increase the height of the textarea */
+    resize: vertical; /* Allow users to resize vertically if needed */
+}
+
+/* Button styling */
+.add_post button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add_post button:hover {
+    background-color: #0056b3;
+}
+
+/* Label styling */
+.add_post label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+.add_post a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey; /* Light gray background */
+    color: white; /* Dark gray text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    margin-right: 10px; /* Add spacing between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.add_post a:hover {
+    background-color: #bbb; /* Darker gray on hover */
+    color: #333 !important;
+}
